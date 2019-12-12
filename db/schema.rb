@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_10_075838) do
+ActiveRecord::Schema.define(version: 2019_12_11_104146) do
 
   create_table "flask_cards", force: :cascade do |t|
     t.text "cach_viet"
@@ -44,19 +44,20 @@ ActiveRecord::Schema.define(version: 2019_12_10_075838) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "stories", force: :cascade do |t|
-    t.string "title"
-    t.string "content"
-    t.string "translate"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   create_table "set_cards", force: :cascade do |t|
     t.string "title"
     t.integer "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_set_cards_on_user_id"
+  end
 
+  create_table "stories", force: :cascade do |t|
+    t.string "title"
+    t.string "content"
+    t.string "translate"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "tests", force: :cascade do |t|
