@@ -1,6 +1,6 @@
 class TestsController < ApplicationController
     def index
-        @tests = Test.all
+        @tests = Hiragana.all
     end
     def new
         @test = Test.new

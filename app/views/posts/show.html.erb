@@ -15,8 +15,8 @@
     <i> <%= @post.user.email %><br></i>
     <i><%= @post.created_at %><br></i><br>
   </div>
- <div style="padding-left:10%;height:100px;overflow:scroll;">
-       <p  style="margin-left:50px;font-size:15px;"><%= @post.post %><br></p>
+ <div style="padding-left:10%">
+       <p  style="margin-left:30px;font-size:15px;margin-right: 30px"><%= @post.post %><br></p>
   </div>
 
    
@@ -25,7 +25,7 @@
   
   <div style="background-color:#d6d6c2;height:3px;"> </div>
 
-  <h3 style="margin-left:20px;">Comment</h3>
+  <h3 style="margin-left:20px; margin-top:20px">Comment</h3>
   <br>
     <% @post.post_comment.each do |post_comment|%>
 
@@ -38,7 +38,7 @@
             <i> <%= post_comment.user.email %><br></i>
             <i><%= post_comment.created_at %><br></i><br>
           </div>
-         <div style="padding-left:30px;height:100px;overflow:scroll;">
+         <div style="padding-left:30px;width: 100px !important">
                <p  style="margin-left:50px;font-size:15px;"><%= post_comment.comment %><br></p>
           </div>
           <br>

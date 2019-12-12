@@ -9,7 +9,7 @@
         <i class="fas fa-book-reader"></i>Bài học
             <div class="dropdown-content">
             <% if user_signed_in? %>
-            <%= link_to "Bảng chữ cái","hiraganas", class: "dropdown-item" %> </br>
+            <%= link_to "Bảng chữ cái",hiraganas_path, class: "dropdown-item" %> </br>
             <%= link_to "Đọc truyện",stories_path, class: "dropdown-item" %></br>
             <%= link_to "Flask card",set_cards_path, class: "dropdown-item" %></br>
             <% else %>
@@ -30,7 +30,7 @@
             <%= link_to "Đọc bài",posts_path, class: "dropdown-item" %></br>
             <% else %>
             <%= link_to "Đăng bài",new_post_path, class: "dropdown-item" %> </br>
-            <%= link_to "Đọc bài",posts_path, class: "dropdown-item" %></br>
+            <%= link_to "Đọc bài",'/posts', class: "dropdown-item" %></br>
             <% end %>
         </div>
     </li>
