@@ -1,6 +1,6 @@
 
 <header class="navbar navbar-expand-lg" >
-    <a href="/"><img src="DHA1.png" alt="icon" style="width: 80px; height: 64px;" ></a>
+    <a href="/"><img src="../DHA1.png" alt="icon" style="width: 80px; height: 64px;" ></a>
     <ul class="navbar-nav redirect">
         <li class="nav_ele nav-link"><i class="fas fa-home"></i><%= link_to "Trang chủ", '/' %></li>
         <li class="nav_ele nav-link"><i class="fas fa-language"></i><%= link_to "Từ điển", dict_path %></li>
@@ -11,11 +11,11 @@
             <% if user_signed_in? %>
             <%= link_to "Bảng chữ cái","hiraganas", class: "dropdown-item" %> </br>
             <%= link_to "Đọc truyện",stories_path, class: "dropdown-item" %></br>
-            <%= link_to "Học qua bài hát",songs_path, class: "dropdown-item" %></br>
+            <%= link_to "Flask card",set_cards_path, class: "dropdown-item" %></br>
             <% else %>
             <%= link_to "Bảng chữ cái", new_user_session_path, class: "dropdown-item" %> </br>
             <%= link_to "Đọc truyện", new_user_session_path , class: "dropdown-item" %></br>
-            <%= link_to "Học qua bài hát",new_user_session_path, class: "dropdown-item" %></br>
+            <%= link_to "Flask card",new_user_session_path, class: "dropdown-item" %></br>
             <% end %>
             </div>
         </li>
@@ -35,7 +35,6 @@
         </div>
     </li>
     </ul>
-
 
     <ul class="navbar-nav ml-md-auto log-in">
         <% if user_signed_in? %>

@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
+  resources :set_cards do
+    resources :flask_cards
+  end
 
-
-  
-  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   resources :post_comments
-  resources :posts
+
+  resources :posts 
 
   resources :hiraganas do
     resources :tests

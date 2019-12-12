@@ -14,6 +14,7 @@ class TestsController < ApplicationController
         @test = Test.find(params[:id])
         puts @test
     end
+    
     private 
         def test_params
             params.require(:test).permit(:question, :answer_a, :answer_b, :answer_c, :answer_d, :correct_answer)

@@ -54,6 +54,7 @@ class HiraganasController < ApplicationController
   # DELETE /hiraganas/1
   # DELETE /hiraganas/1.json
   def destroy
+    puts "Hello WORLD !!!!!!!!!!!!!!!!!!!"
     @hiragana.destroy
     respond_to do |format|
       format.html { redirect_to hiraganas_url, notice: 'Hiragana was successfully destroyed.' }

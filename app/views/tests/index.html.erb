@@ -29,16 +29,7 @@
 <script >
   $('.carousel').carousel({
     interval: false
-  }); 
-
-  // 
-  // var list_card = $(".testcard .answer input");
-  
-  // for(let i=0;i<list_button.length;i++){
-  //   let answer = list_button.eq(i).attr("value")
-  //   if(answer == correct_answer) list_button.eq(i).addClass("correct");
-  //   else{list_button.eq(i).addClass("fail");}
-  // }
+  });
   $(document).on('click', ".active .answer input", function() {
     var answer = $(this).attr('value');
     var correct_answer = $(".active ").attr("value");
