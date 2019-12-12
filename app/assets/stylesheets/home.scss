@@ -19,41 +19,46 @@ $color_hover: #cc3333;
 .all-title{
     border-radius: 50%;
     background-color: #F6CECE;
-    margin-right: 30%;
-    margin-left: 20%;
+    // margin-right: 28%;
+    margin-left: 35%;
     height: 300px;
-    width: 35%;
+    width: 40%;
 }
 .introduce{
     margin-top: 80px;
     margin-bottom: 120px;
+    margin-right: 25% !important;
+    width: 70% !important;
     .row{
         margin-right: 0px !important;
     }
     .card{
-        margin-left: 25%;
-        margin-right: 25%;
-        margin-bottom: 80px;
-        height: 480px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 50px;
+        height: 200px;
         border: 2px solid $bgblue;
         border-radius: 15px;
-        background-color: #F6CECE;
-        img{
-            width: 100%;
-            height: 280px;
-            border: 1px solid $bgblue;
-            border-radius: 15px;
-            margin-top: 0px !important;
-        }
+        background-color: #D8F6CE;
+        
         h5{
-            font-size: 20px;
+            font-size: 30px;
             font-weight: 600px;
-            color: $bgblue;
+            color: $color_hover;
+        }
+        .card-text{
+            margin-bottom: 20px;
         }
         .try-button{
-            color: white;
+            color: $bgblue;
+            border: 1px solid $bgblue;
             font-size: 15px;
             padding: 5px 10px;
+            border-radius: 4px;
+        }
+        .try-button:hover{
+            color: white;
+            background-color: $bgblue;
         }
     }
 }
