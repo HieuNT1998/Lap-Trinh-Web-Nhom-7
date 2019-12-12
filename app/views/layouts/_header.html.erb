@@ -6,15 +6,15 @@
         <li class="nav_ele nav-link"><i class="fas fa-language"></i><%= link_to "Từ điển", dict_path %></li>
         
         <li class="dropdown nav_ele nav-item">
-        <i class="fas fa-book-reader"></i></i>Bài học
+        <i class="fas fa-book-reader"></i>Bài học
             <div class="dropdown-content">
             <% if user_signed_in? %>
             <%= link_to "Bảng chữ cái","hiraganas", class: "dropdown-item" %> </br>
-            <%= link_to "Đọc báo",news_path, class: "dropdown-item" %></br>
+            <%= link_to "Đọc truyện",stories_path, class: "dropdown-item" %></br>
             <%= link_to "Học qua bài hát",songs_path, class: "dropdown-item" %></br>
             <% else %>
             <%= link_to "Bảng chữ cái", new_user_session_path, class: "dropdown-item" %> </br>
-            <%= link_to "Đọc báo", new_user_session_path , class: "dropdown-item" %></br>
+            <%= link_to "Đọc truyện", new_user_session_path , class: "dropdown-item" %></br>
             <%= link_to "Học qua bài hát",new_user_session_path, class: "dropdown-item" %></br>
             <% end %>
             </div>
@@ -22,9 +22,8 @@
 
        
         
-        <li class="nav_ele nav-link"><i class="fas fa-graduation-cap"></i><%= link_to "Phương pháp học", '#' %></li>
-        <li class="dropdown nav_ele">
-            Phương pháp học
+        <li class="dropdown nav_ele nav-item">
+        <i class="fas fa-graduation-cap"></i>Phương pháp học
             <div class="dropdown-content">
             <% if user_signed_in? %>
             <%= link_to "Đăng bài",new_post_path, class: "dropdown-item" %> </br>

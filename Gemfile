@@ -4,6 +4,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.6.3'
 gem 'devise'
 gem 'carrierwave', '~> 2.0', '>= 2.0.2'
+gem 'cancancan'
+gem 'rails_admin'
 
 gem 'rack-cors', :require => 'rack/cors'
 

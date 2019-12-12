@@ -73,7 +73,6 @@ header{
                 color: white !important;
                 font-weight: 600;
                 width: 100%;
-                // padding: 5px 20px 5px 5px;
                 margin-bottom: 5px;
             }
             a:hover{
@@ -83,6 +82,8 @@ header{
       }
       .dropdown:hover {
         .dropdown-content{
+            width: 100%;
+            border-top-right-radius: 0px !important; 
             display: block;
             a:hover{
                 color: $bgblue !important;
@@ -96,8 +97,8 @@ header{
 .background{
     margin-right: 0px;
     padding-right: 0px;
-    background: url(cat4.gif) 800px 50px no-repeat, url(cat1.1.gif) 60px 400px no-repeat, url(cat1.gif) 1000px 980px no-repeat, url(cat1.1.gif) 60px 1560px no-repeat,url(2.png) left top repeat ;
-    background-size: 200px 200px, auto, auto, auto, 100% auto;
+    background: url(cat4.gif) 15% 50px no-repeat, url(cat1.gif) 92% 450px no-repeat, url(cat1.1.gif) 40px 1560px no-repeat,linear-gradient(#E0F8F7, #F5A9F2) ;
+    background-size: 200px 200px, auto, auto, 100% auto;
     position: relative;
     min-height: 810px;
 }

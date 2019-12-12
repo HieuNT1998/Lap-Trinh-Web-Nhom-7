@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Cachviet:</strong>
+  <strong>Cachvietabc:</strong>
   <%= @hiragana.cachviet %>
 </p>
 
@@ -10,56 +10,6 @@
   <%= @hiragana.cachdoc %>
 </p>
 
-<% @hiragana.tests.each do |t| %>
-  <p>
-    <strong>Question:</strong>
-    <%= t.question %>
-  </p>
-  <p>
-    <span>
-      <%= t.answer_a %>
-    </span>
-    <span>
-      <%= t.answer_b %>
-    </span>
-    <span>
-      <%= t.answer_c %>
-    </span>
-    <span>
-      <%= t.answer_d %>
-    </span>
-  </p>
-<% end %>
-
-<%= form_with(model: [ @hiragana, @hiragana.tests.build ], local: true) do |form| %>
-  <p>
-    <%= form.label :question %><br>
-    <%= form.text_field :question %>
-  </p>
-  <p>
-    <%= form.label :answer_a %><br>
-    <%= form.text_area :answer_a %>
-  </p>
-  <p>
-    <%= form.label :answer_b %><br>
-    <%= form.text_area :answer_b %>
-  </p>
-  <p>
-    <%= form.label :answer_c %><br>
-    <%= form.text_area :answer_c %>
-  </p>
-  <p>
-    <%= form.label :answer_d %><br>
-    <%= form.text_area :answer_d %>
-  </p>
-  <p>
-    <%= form.label :correct_answer %><br>
-    <%= form.text_area :correct_answer %>
-  </p>
-  <p>
-    <%= form.submit %>
-  </p>
-<% end %>
 
 <%= link_to 'Edit', edit_hiragana_path(@hiragana) %> |
 <%= link_to 'Back', hiraganas_path %>
