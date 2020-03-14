@@ -13,7 +13,7 @@ gem 'rack-cors', :require => 'rack/cors'
 
 gem 'bootstrap-sass', '~>3.4.1'
 gem 'autoprefixer-rails'
-gem 'bootstrap', '~> 4.1.3'
+gem 'bootstrap', '~> 4.3.1'
 gem 'font-awesome-sass', '~> 5.2.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.1'
